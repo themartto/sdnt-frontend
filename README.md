@@ -1,7 +1,7 @@
 # sdnt-frontend
 
 
-sdnt-frontend [sdnt](https://github.com/themartto/sdnt) — a web app to look up DNS records, WHOIS data, and SSL certificate info for any domain.
+sdnt-frontend — a web app to look up DNS records, WHOIS data, and SSL certificate info for any domain.
 
 
 Check the live version at: [sdnt.info](https://sdnt.info)
