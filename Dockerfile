@@ -2,15 +2,15 @@ FROM node:22-alpine AS builder
 
 WORKDIR /app
 
-COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
+COPY package.json pnpm-lock.yaml ./
+RUN corepack enable pnpm && pnpm install --frozen-lockfile
 
 COPY . .
 
 ARG VITE_API_URL=https://api.sdnt.info
 ENV VITE_API_URL=$VITE_API_URL
 
-RUN yarn build
+RUN pnpm build
 
 
 FROM nginx:alpine

@@ -33,10 +33,10 @@ cp .env.example .env
 ```
 
 ```bash
-yarn dev       # development server
-yarn build     # production build
-yarn typecheck # type check without emitting
-yarn lint      # lint
+pnpm dev       # development server
+pnpm build     # production build
+pnpm typecheck # type check without emitting
+pnpm lint      # lint
 ```
 
 ## Docker
